@@ -13,9 +13,9 @@ jobs:
               # install DumpsterDiver here
               echo "installing pip and running DumpsterDiver"
               sudo apt-get install python3-pip
-              pip3 install -r requirements.txt
               git clone https://github.com/securing/DumpsterDiver.git
               cd DumpsterDiver
+              pip3 install -r requirements.txt
               python3 DumpsterDiver.py -p /home/circleci/spring-rest-helloworld --min-key 40 --max-key 40 --entropy 4.3
               
           name: "dumpster diver"
