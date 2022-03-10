@@ -11,7 +11,7 @@ jobs:
       - checkout
       - snyk/scan
         run: 
-          command: | 
+          command:
               # install DumpsterDiver here
               echo "installing pip and running DumpsterDiver"
               sudo apt-get install python3-pip
