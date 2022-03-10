@@ -48,7 +48,7 @@ jobs:
               mvn versions:set -DnewVersion=$(cat tempvers.txt) \n"
           name: "remove snapshot version"
       - 
-        run: 
+        run:
           command: |
               cp target/*.war docker/app/
               docker login -u $DOCKER_USER -p $DOCKER_PASS
